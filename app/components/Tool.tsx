@@ -52,7 +52,7 @@ ChartJS.register(
 );
 
 /* ---------- theme ---------- */
-const BLUE = "#006132";
+const BLUE = "#021A2B";
 const DEEP = "#0B4A75";
 const SKY = "#5DB0E6";
 const GOLD = "#F5B942";

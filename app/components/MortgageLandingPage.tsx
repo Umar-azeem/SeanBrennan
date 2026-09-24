@@ -28,7 +28,7 @@ const MortgageLandingPage = () => {
 
   return (
     <div className="">
-      <div className="rounded-3xl bg-[#006132] text-white font-sans overflow-hidden relative ">
+      <div className="rounded-3xl bg-[#021A2B] text-white font-sans overflow-hidden relative ">
         <div className="absolute right-0 top-1/2 -translate-y-1/2 opacity-10 pointer-events-none hidden md:block">
           {/* <svg width="600" height="700" viewBox="0 0 600 700" fill="none">
             <path
@@ -135,7 +135,7 @@ const MortgageLandingPage = () => {
                 }}
               />
 
-              <div className="absolute -bottom-6 sm:bottom-10 right-0 md:right-22 left-0 text-white sm:left-auto mx-auto sm:mx-0 bg-[#006132]/85  p-2 border-white border-2 sm:p-3 rounded-2xl shadow-xl w-[60%] sm:w-62">
+              <div className="absolute -bottom-6 sm:bottom-10 right-0 md:right-22 left-0 text-white sm:left-auto mx-auto sm:mx-0 bg-[#021A2B]/85  p-2 border-white border-2 sm:p-3 rounded-2xl shadow-xl w-[60%] sm:w-62">
                 <h3 className="text-xl font-bold mb-2">Sean Brennan</h3>
                 <p className="text-white text-sm mb-1">Sr. Loan Officer</p>
                 <p className="text-white text-xs mb-1">NMLS ID: 168226</p>

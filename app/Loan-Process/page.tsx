@@ -25,7 +25,7 @@ export default function LoanProcessPage() {
   return (
     <div className="font-sans bg-white text-gray-800 overflow-x-hidden">
       {/* Hero Section */}
-      <section className="relative bg-[#006132] text-white overflow-hidden">
+      <section className="relative bg-[#021A2B] text-white overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
           <div className="absolute bottom-0 left-0 w-80 h-80 bg-white rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
@@ -46,7 +46,7 @@ export default function LoanProcessPage() {
               <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
                 <Link
                   href="https://wa.me/19047351895"
-                  className="inline-flex items-center justify-center gap-2 bg-white text-[#006132] px-5 py-2.5 sm:px-6 sm:py-3 rounded-xl font-semibold hover:bg-gray-100 transition-transform hover:-translate-y-1 shadow-lg text-sm sm:text-base"
+                  className="inline-flex items-center justify-center gap-2 bg-white text-[#021A2B] px-5 py-2.5 sm:px-6 sm:py-3 rounded-xl font-semibold hover:bg-gray-100 transition-transform hover:-translate-y-1 shadow-lg text-sm sm:text-base"
                 >
                   Apply Now
                   <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -79,7 +79,7 @@ export default function LoanProcessPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 text-center">
             <div className="p-4 sm:p-6 bg-white rounded-2xl shadow-sm">
-              <div className="text-[#006132] text-2xl sm:text-3xl font-bold">
+              <div className="text-[#021A2B] text-2xl sm:text-3xl font-bold">
                 30+
               </div>
               <div className="text-xs sm:text-sm text-gray-500">
@@ -87,7 +87,7 @@ export default function LoanProcessPage() {
               </div>
             </div>
             <div className="p-4 sm:p-6 bg-white rounded-2xl shadow-sm">
-              <div className="text-[#006132] text-2xl sm:text-3xl font-bold">
+              <div className="text-[#021A2B] text-2xl sm:text-3xl font-bold">
                 4,000+
               </div>
               <div className="text-xs sm:text-sm text-gray-500">
@@ -95,7 +95,7 @@ export default function LoanProcessPage() {
               </div>
             </div>
             <div className="p-4 sm:p-6 bg-white rounded-2xl shadow-sm">
-              <div className="text-[#006132] text-2xl sm:text-3xl font-bold">
+              <div className="text-[#021A2B] text-2xl sm:text-3xl font-bold">
                 14-21
               </div>
               <div className="text-xs sm:text-sm text-gray-500">
@@ -103,7 +103,7 @@ export default function LoanProcessPage() {
               </div>
             </div>
             <div className="p-4 sm:p-6 bg-white rounded-2xl shadow-sm">
-              <div className="text-[#006132] text-2xl sm:text-3xl font-bold">
+              <div className="text-[#021A2B] text-2xl sm:text-3xl font-bold">
                 680+
               </div>
               <div className="text-xs sm:text-sm text-gray-500">
@@ -119,7 +119,7 @@ export default function LoanProcessPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-800">
-              Your Path to <span className="text-[#006132]">Homeownership</span>
+              Your Path to <span className="text-[#021A2B]">Homeownership</span>
             </h2>
             <p className="text-gray-500 mt-2 max-w-2xl mx-auto text-sm sm:text-base">
               A simple, transparent process from start to finish
@@ -128,7 +128,7 @@ export default function LoanProcessPage() {
 
           <div className="relative">
             {/* Timeline line */}
-            <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-1 bg-[#006132]/20 transform -translate-x-1/2 hidden md:block" />
+            <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-1 bg-[#021A2B]/20 transform -translate-x-1/2 hidden md:block" />
 
             <div className="space-y-8 md:space-y-0">
               {steps.map((step, index) => (
@@ -140,14 +140,14 @@ export default function LoanProcessPage() {
                 >
                   {/* Timeline dot - Desktop */}
                   <div className="absolute left-4 md:left-1/2 top-6 md:top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 hidden md:flex">
-                    <div className="w-5 h-5 lg:w-6 lg:h-6 rounded-full bg-[#006132] border-4 border-white shadow-lg flex items-center justify-center">
+                    <div className="w-5 h-5 lg:w-6 lg:h-6 rounded-full bg-[#021A2B] border-4 border-white shadow-lg flex items-center justify-center">
                       <div className="w-1.5 h-1.5 lg:w-2 lg:h-2 rounded-full bg-white" />
                     </div>
                   </div>
 
                   {/* Mobile dot */}
                   <div className="md:hidden absolute left-3 top-5 transform -translate-x-1/2 z-10">
-                    <div className="w-4 h-4 rounded-full bg-[#006132] border-2 border-white shadow" />
+                    <div className="w-4 h-4 rounded-full bg-[#021A2B] border-2 border-white shadow" />
                   </div>
 
                   {/* Content */}
@@ -164,11 +164,11 @@ export default function LoanProcessPage() {
                           index % 2 === 0 && "md:flex-row-reverse"
                         }`}
                       >
-                        <div className="w-10 h-10 lg:w-12 lg:h-12 rounded-xl bg-[#006132]/10 text-[#006132] flex items-center justify-center flex-shrink-0">
+                        <div className="w-10 h-10 lg:w-12 lg:h-12 rounded-xl bg-[#021A2B]/10 text-[#021A2B] flex items-center justify-center flex-shrink-0">
                           {step.icon}
                         </div>
                         <div>
-                          <span className="text-xs font-semibold text-[#006132]">
+                          <span className="text-xs font-semibold text-[#021A2B]">
                             Step {index + 1}
                           </span>
                           <h3 className="text-base lg:text-lg font-bold text-gray-800 leading-tight">
@@ -197,7 +197,7 @@ export default function LoanProcessPage() {
           <div className="text-center mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-800">
               Understanding the{" "}
-              <span className="text-[#006132]">Loan Process</span>
+              <span className="text-[#021A2B]">Loan Process</span>
             </h2>
             <p className="text-gray-500 mt-2 text-sm sm:text-base">
               A comprehensive guide to each stage of your mortgage journey
@@ -211,7 +211,7 @@ export default function LoanProcessPage() {
                 className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow"
               >
                 <div className="flex items-start gap-3 sm:gap-4 p-4 sm:p-6 border-b border-gray-100 bg-gray-50/50">
-                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-[#006132]/10 text-[#006132] flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-[#021A2B]/10 text-[#021A2B] flex items-center justify-center flex-shrink-0 mt-0.5">
                     {section.icon}
                   </div>
                   <div>
@@ -235,17 +235,17 @@ export default function LoanProcessPage() {
       </section>
 
       {/* Credit Score Section */}
-      <section className="py-12 sm:py-16 md:py-24 bg-[#006132]/5">
+      <section className="py-12 sm:py-16 md:py-24 bg-[#021A2B]/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="order-2 md:order-1">
-              <div className="inline-flex items-center gap-2 bg-[#006132]/10 text-[#006132] px-3 py-1.5 rounded-full text-xs font-semibold mb-3 sm:mb-4">
+              <div className="inline-flex items-center gap-2 bg-[#021A2B]/10 text-[#021A2B] px-3 py-1.5 rounded-full text-xs font-semibold mb-3 sm:mb-4">
                 <Scale className="w-4 h-4" />
                 Credit Scores Explained
               </div>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-800 mb-3 sm:mb-4">
                 Understanding Your{" "}
-                <span className="text-[#006132]">Credit Score</span>
+                <span className="text-[#021A2B]">Credit Score</span>
               </h2>
               <p className="text-gray-600 mb-4 sm:mb-6 text-sm sm:text-base">
                 Your credit score is one of the most important factors in
@@ -316,7 +316,7 @@ export default function LoanProcessPage() {
                   <div>
                     <div className="flex justify-between text-xs sm:text-sm mb-1">
                       <span className="font-medium">Excellent</span>
-                      <span className="text-[#006132] font-bold">740+</span>
+                      <span className="text-[#021A2B] font-bold">740+</span>
                     </div>
                     <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
                       <div
@@ -328,7 +328,7 @@ export default function LoanProcessPage() {
                   <div>
                     <div className="flex justify-between text-xs sm:text-sm mb-1">
                       <span className="font-medium">Good</span>
-                      <span className="text-[#006132] font-bold">670–739</span>
+                      <span className="text-[#021A2B] font-bold">670–739</span>
                     </div>
                     <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
                       <div
@@ -340,7 +340,7 @@ export default function LoanProcessPage() {
                   <div>
                     <div className="flex justify-between text-xs sm:text-sm mb-1">
                       <span className="font-medium">Fair</span>
-                      <span className="text-[#006132] font-bold">580–669</span>
+                      <span className="text-[#021A2B] font-bold">580–669</span>
                     </div>
                     <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
                       <div
@@ -352,7 +352,7 @@ export default function LoanProcessPage() {
                   <div>
                     <div className="flex justify-between text-xs sm:text-sm mb-1">
                       <span className="font-medium">Poor</span>
-                      <span className="text-[#006132] font-bold">
+                      <span className="text-[#021A2B] font-bold">
                         Below 580
                       </span>
                     </div>
@@ -364,7 +364,7 @@ export default function LoanProcessPage() {
                     </div>
                   </div>
                 </div>
-                <div className="mt-4 sm:mt-6 p-3 sm:p-4 bg-[#006132]/5 rounded-xl">
+                <div className="mt-4 sm:mt-6 p-3 sm:p-4 bg-[#021A2B]/5 rounded-xl">
                   <p className="text-xs sm:text-sm text-gray-600">
                     <span className="font-semibold">Tip:</span> Pay bills on
                     time, keep balances low, and limit credit applications to
@@ -380,7 +380,7 @@ export default function LoanProcessPage() {
       {/* Timeline Summary */}
       <section className="py-12 sm:py-16 md:py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 bg-[#006132]/10 text-[#006132] px-3 py-1.5 rounded-full text-xs font-semibold mb-3 sm:mb-4">
+          <div className="inline-flex items-center gap-2 bg-[#021A2B]/10 text-[#021A2B] px-3 py-1.5 rounded-full text-xs font-semibold mb-3 sm:mb-4">
             <Clock className="w-4 h-4" />
             Timeline
           </div>
@@ -399,7 +399,7 @@ export default function LoanProcessPage() {
                 key={index}
                 className="bg-gray-50 rounded-xl p-3 sm:p-4 text-center"
               >
-                <div className="text-[#006132] text-xl sm:text-2xl font-bold">
+                <div className="text-[#021A2B] text-xl sm:text-2xl font-bold">
                   {item.days}
                 </div>
                 <div className="text-[10px] sm:text-xs text-gray-500 leading-tight">
@@ -409,7 +409,7 @@ export default function LoanProcessPage() {
             ))}
           </div>
 
-          <div className="mt-6 sm:mt-8 p-4 sm:p-6 bg-[#006132]/5 rounded-2xl border border-[#006132]/10">
+          <div className="mt-6 sm:mt-8 p-4 sm:p-6 bg-[#021A2B]/5 rounded-2xl border border-[#021A2B]/10">
             <p className="text-gray-600 text-sm sm:text-base">
               <span className="font-semibold">Ready to get started?</span>{" "}
               Contact one of our experienced Loan Officers today to discuss your
@@ -418,14 +418,14 @@ export default function LoanProcessPage() {
             <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4 mt-4 sm:mt-4">
               <Link
                 href="/apply"
-                className="inline-flex items-center justify-center gap-2 bg-[#006132] text-white px-5 py-2.5 sm:px-6 sm:py-3 rounded-xl font-semibold hover:bg-[#006132] transition-transform hover:-translate-y-1 shadow-lg text-sm sm:text-base"
+                className="inline-flex items-center justify-center gap-2 bg-[#021A2B] text-white px-5 py-2.5 sm:px-6 sm:py-3 rounded-xl font-semibold hover:bg-[#021A2B] transition-transform hover:-translate-y-1 shadow-lg text-sm sm:text-base"
               >
                 Apply Online
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
               </Link>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2 bg-white text-[#006132] px-5 py-2.5 sm:px-6 sm:py-3 rounded-xl font-semibold border border-[#006132]/30 hover:bg-gray-50 transition-transform hover:-translate-y-1 text-sm sm:text-base"
+                className="inline-flex items-center justify-center gap-2 bg-white text-[#021A2B] px-5 py-2.5 sm:px-6 sm:py-3 rounded-xl font-semibold border border-[#021A2B]/30 hover:bg-gray-50 transition-transform hover:-translate-y-1 text-sm sm:text-base"
               >
                 <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
                 Schedule Consultation
@@ -436,7 +436,7 @@ export default function LoanProcessPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="relative bg-[#006132] text-white overflow-hidden">
+      <section className="relative bg-[#021A2B] text-white overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl" />
           <div className="absolute bottom-0 left-0 w-80 h-80 bg-white rounded-full blur-3xl" />
@@ -453,7 +453,7 @@ export default function LoanProcessPage() {
             <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4">
               <Link
                 href="/apply"
-                className="inline-flex items-center justify-center gap-2 bg-white text-[#006132] px-6 py-3 sm:px-8 sm:py-4 rounded-xl font-bold hover:bg-gray-100 transition-transform hover:-translate-y-1 shadow-xl text-sm sm:text-base"
+                className="inline-flex items-center justify-center gap-2 bg-white text-[#021A2B] px-6 py-3 sm:px-8 sm:py-4 rounded-xl font-bold hover:bg-gray-100 transition-transform hover:-translate-y-1 shadow-xl text-sm sm:text-base"
               >
                 Apply Now
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />

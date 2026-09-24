@@ -18,7 +18,7 @@ function HeroBanner() {
   const selectedProgram = loanPrograms.find((p) => p.id === selectedId);
 
   return (
-    <div className="bg-[#006132] text-white py-16 px-4 rounded-2xl">
+    <div className="bg-[#021A2B] text-white py-16 px-4 rounded-2xl">
       <div className="container mx-auto max-w-7xl">
         {selectedProgram ? (
           <>
@@ -58,7 +58,7 @@ function HeroBanner() {
 // Loading fallback for Suspense
 function HeroBannerLoading() {
   return (
-    <div className="bg-[#006132] text-white py-16 px-4  rounded-2xl">
+    <div className="bg-[#1470AF] text-white py-16 px-4  rounded-2xl">
       <div className="container mx-auto max-w-7xl">
         <div className="h-12 w-64 bg-white/20 rounded-lg animate-pulse mb-2"></div>
         <div className="h-6 w-96 bg-white/20 rounded-lg animate-pulse"></div>

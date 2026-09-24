@@ -15,7 +15,7 @@ function HeroBanner() {
   const selected = teamMembers.find((m) => m.id === selectedId);
 
   return (
-    <div className="bg-gradient-to-r from-[#006132] via-[#004d26] to-[#011829] text-white py-16 px-4 rounded-2xl relative overflow-hidden">
+    <div className="bg-gradient-to-r from-[#021A2B] via-[#021A2B] to-[#011829] text-white py-16 px-4 rounded-2xl relative overflow-hidden">
       {/* animated background blobs */}
       <div className="absolute -top-20 -right-20 w-72 h-72 rounded-full bg-[#67d8dc]/20 blur-3xl animate-pulse" />
       <div className="absolute -bottom-20 -left-20 w-72 h-72 rounded-full bg-[#f36f55]/20 blur-3xl animate-pulse" />
@@ -48,7 +48,7 @@ function HeroBanner() {
 
 function HeroBannerLoading() {
   return (
-    <div className="bg-[#006132] text-white py-16 px-4 rounded-2xl">
+    <div className="bg-[#021A2B] text-white py-16 px-4 rounded-2xl">
       <div className="container mx-auto max-w-7xl">
         <div className="h-12 w-64 bg-white/20 rounded-lg animate-pulse mb-2" />
         <div className="h-6 w-96 bg-white/20 rounded-lg animate-pulse" />

@@ -7,7 +7,7 @@ function Consider() {
       <section className="bg-[#f5f5f5] py-16 sm:py-24 lg:py-30 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="text-center lg:text-left">
-            <p className="text-[#006132] uppercase tracking-[3px] sm:tracking-[6px] font-bold text-md sm:text-xl mb-6 sm:mb-8">
+            <p className="text-[#021A2B] uppercase tracking-[3px] sm:tracking-[6px] font-bold text-md sm:text-xl mb-6 sm:mb-8">
               ME & Our Clients
             </p>
 
@@ -22,7 +22,7 @@ function Consider() {
 
             <Link href="/contact-us">
               {" "}
-              <button className="bg-[#006132] w-full sm:w-auto flex items-center justify-center gap-3 text-white px-6 py-4 rounded-xl font-bold transition transform duration-300 hover:-translate-y-1">
+              <button className="bg-[#021A2B] w-full sm:w-auto flex items-center justify-center gap-3 text-white px-6 py-4 rounded-xl font-bold transition transform duration-300 hover:-translate-y-1">
                 Contact
               </button>
             </Link>

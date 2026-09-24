@@ -1,99 +1,213 @@
-// app/team/page.tsx
-"use client";
-
-import Image from "next/image";
+// app/loan-programs/[slug]/page.tsx
+import { notFound } from "next/navigation";
 import Link from "next/link";
 import * as Icons from "lucide-react";
-import { motion } from "framer-motion";
-import { teamMembers } from "@/app/data/team";
+import type { LucideIcon } from "lucide-react";
+import { loanPrograms } from "@/app/data/loanPrograms";
 
-export default function TeamPage() {
+export async function generateStaticParams() {
+  return loanPrograms.map((program) => ({
+    slug: program.id,
+  }));
+}
+
+export default async function LoanProgramDetailPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const program = loanPrograms.find((p) => p.id === slug);
+
+  if (!program) {
+    notFound();
+  }
+
+  const IconComponent = Icons[
+    program.icon as keyof typeof Icons
+  ] as unknown as LucideIcon;
+
   return (
-    <div className="py-6">
-      {/* At Your Service intro */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 md:p-8 mb-10"
-      >
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-          At Your Service
-        </h2>
-        <p className="text-gray-700 leading-relaxed">
-          Whether you{`'`}re buying, selling, refinancing, or building your
-          dream home, you have a lot riding on your loan specialist. Since
-          market conditions and mortgage programs change frequently, you need to
-          make sure you{`'`}re dealing with a top professional who is able to
-          give you quick and accurate financial advice. As an experienced loan
-          officer I have the knowledge and expertise you need to explore the
-          many financing options available. Ensuring that you make the right
-          choice for you and your family is my ultimate goal. And I am committed
-          to providing my customers with mortgage services that exceed their
-          expectations.
-        </p>
-      </motion.div>
+    <div className="min-h-screen py-12">
+      <div className="container mx-auto px-4 max-w-4xl">
+        <Link
+          href="/loan-programs"
+          className="inline-flex items-center text-[#006132] hover:text-[#004d26] font-medium mb-8 transition group"
+        >
+          <Icons.ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition" />
+          Back to All Programs
+        </Link>
 
-      {/* Team grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {teamMembers.map((member, idx) => (
-          <motion.div
-            key={member.id}
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: idx * 0.08 }}
-            whileHover={{ y: -6 }}
-            className="group"
-          >
-            <Link href={`/team/${member.id}`}>
-              <div
-                className="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 h-full flex flex-col"
-                style={{ transformStyle: "preserve-3d" }}
-              >
-                {/* Photo */}
-                <div className="relative aspect-[4/5] bg-gradient-to-br from-[#006132]/10 to-[#67d8dc]/10 overflow-hidden">
-                  <Image
-                    src={member.photo}
-                    alt={member.name}
-                    fill
-                    className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                  <div className="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0">
-                    <span className="inline-flex items-center gap-2 text-xs bg-white/20 backdrop-blur px-3 py-1 rounded-full">
-                      View Profile <Icons.ArrowRight className="w-3 h-3" />
-                    </span>
-                  </div>
-                </div>
+        <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-6 md:p-8">
+          <div className="flex items-center gap-4 mb-6">
+            <div className="p-3 bg-[#006132]/10 rounded-full">
+              {IconComponent && (
+                <IconComponent className="w-8 h-8 text-[#006132]" />
+              )}
+            </div>
+            <div>
+              <h1 className="text-3xl font-bold text-gray-900">
+                {program.title}
+              </h1>
+              <p className="text-gray-600">{program.subtitle}</p>
+            </div>
+          </div>
 
-                {/* Info */}
-                <div className="p-5 flex-1 flex flex-col">
-                  <h3 className="text-lg font-bold text-gray-900 group-hover:text-[#006132] transition">
-                    {member.name}
-                  </h3>
-                  <p className="text-sm text-[#006132] font-medium">
-                    {member.title}
-                  </p>
-                  <p className="text-xs text-gray-500 mt-1">
-                    NMLS #{member.nmls}
-                  </p>
+          <div className="prose max-w-none">
+            <h3 className="text-lg font-semibold text-gray-900 mb-3">
+              Overview
+            </h3>
+            <p className="text-gray-700 leading-relaxed text-lg">
+              {program.longDescription}
+            </p>
 
-                  <div className="mt-4 pt-4 border-t border-gray-100 space-y-1.5 text-xs text-gray-600">
-                    <p className="flex items-center gap-2">
-                      <Icons.Phone className="w-3.5 h-3.5 text-[#006132]" />
-                      {member.phone}
-                    </p>
-                    <p className="flex items-center gap-2 truncate">
-                      <Icons.Mail className="w-3.5 h-3.5 text-[#006132] flex-shrink-0" />
-                      <span className="truncate">{member.email}</span>
-                    </p>
-                  </div>
+            {program.benefits && program.benefits.length > 0 && (
+              <div className="mt-6">
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                  Key Benefits
+                </h3>
+                <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 list-none p-0">
+                  {program.benefits.map((benefit, idx) => (
+                    <li
+                      key={idx}
+                      className="flex items-start gap-2 text-gray-700"
+                    >
+                      <Icons.CheckCircle className="w-5 h-5 text-[#006132] flex-shrink-0 mt-0.5" />
+                      <span>{benefit}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {program.features && program.features.length > 0 && (
+              <div className="mt-6">
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                  Features
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  {program.features.map((feature, idx) => (
+                    <div
+                      key={idx}
+                      className="bg-gray-50 p-3 rounded-lg border border-gray-200"
+                    >
+                      <span className="text-gray-700">{feature}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
-            </Link>
-          </motion.div>
-        ))}
+            )}
+
+            {program.idealFor && program.idealFor.length > 0 && (
+              <div className="mt-6 p-4 bg-[#F0F7F3] rounded-lg border border-[#006132]/20">
+                <h3 className="text-md font-semibold text-[#006132] mb-3">
+                  Who This Loan Is For
+                </h3>
+                <ul className="flex flex-wrap gap-2 list-none p-0">
+                  {program.idealFor.map((item, idx) => (
+                    <li
+                      key={idx}
+                      className="bg-white px-4 py-2 rounded-full text-sm text-gray-700 border border-gray-200"
+                    >
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {program.steps && program.steps.length > 0 && (
+              <div className="mt-6">
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">
+                  How It Works
+                </h3>
+                <div className="space-y-4">
+                  {program.steps.map((step) => (
+                    <div key={step.step} className="flex gap-4 items-start">
+                      <div className="flex-shrink-0 w-8 h-8 bg-[#021A2B] text-white rounded-full flex items-center justify-center font-bold text-sm">
+                        {step.step}
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-gray-900">
+                          {step.title}
+                        </h4>
+                        <p className="text-gray-600 text-sm">
+                          {step.description}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {program.testimonials && program.testimonials.length > 0 && (
+              <div className="mt-6 bg-gray-50 p-6 rounded-lg border border-gray-200">
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">
+                  What Our Clients Say
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {program.testimonials.slice(0, 2).map((testimonial, idx) => (
+                    <div
+                      key={idx}
+                      className="bg-white p-4 rounded-lg border border-gray-200"
+                    >
+                      <p className="text-gray-700 italic">
+                        &ldquo;{testimonial.text}&rdquo;
+                      </p>
+                      <p className="text-sm font-semibold text-gray-900 mt-2">
+                        - {testimonial.name}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {program.faqs && program.faqs.length > 0 && (
+              <div className="mt-6">
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">
+                  Frequently Asked Questions
+                </h3>
+                <div className="space-y-3">
+                  {program.faqs.map((faq, idx) => (
+                    <div
+                      key={idx}
+                      className="border border-gray-200 rounded-lg overflow-hidden"
+                    >
+                      <details className="group">
+                        <summary className="flex justify-between items-center w-full p-4 bg-gray-50 hover:bg-gray-100 cursor-pointer font-medium text-gray-900">
+                          <span>{faq.question}</span>
+                          <Icons.ChevronDown className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" />
+                        </summary>
+                        <div className="p-4 text-gray-700 border-t border-gray-200">
+                          {faq.answer}
+                        </div>
+                      </details>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            <div className="mt-8 flex flex-wrap gap-4 border-t border-gray-200 pt-8">
+              <Link
+                href={program.ctaLink || "/contact-us"}
+                className="inline-flex items-center px-6 py-3 bg-[#021A2B] hover:bg-[#021A2B] text-white font-semibold rounded-lg transition"
+              >
+                {program.ctaText || "Get Started"}
+                <Icons.ArrowRight className="ml-2 w-4 h-4" />
+              </Link>
+              <Link
+                href="/tools"
+                className="inline-flex items-center px-6 py-3 border border-gray-300 hover:bg-gray-50 text-gray-800 font-semibold rounded-lg transition"
+              >
+                Calculate Payments
+                <Icons.Calculator className="ml-2 w-4 h-4" />
+              </Link>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

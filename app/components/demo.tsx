@@ -6,7 +6,7 @@ function demo() {
       {" "}
       {/* <div
                     key={product.id}
-                    className="bg-[#006132]  text-white rounded-3xl p-6 flex flex-col flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] min-h-[280px]"
+                    className="bg-[#021A2B]  text-white rounded-3xl p-6 flex flex-col flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] min-h-[280px]"
                   >
                     <div className="text-white mb-4">
                       <div className="bg-white/20 rounded-full p-3 inline-block">

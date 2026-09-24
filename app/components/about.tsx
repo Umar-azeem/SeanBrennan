@@ -145,7 +145,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section - Sean Brennan */}
-      <div className="relative bg-gradient-to-r from-[#0329b3] to-[#006132] text-white rounded-2xl">
+      <div className="relative bg-gradient-to-r from-[#003961] to-[#021A2B] text-white rounded-2xl">
         <div
           className="absolute inset-0 z-0 opacity-20"
           style={{
@@ -174,7 +174,7 @@ export default function AboutPage() {
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link href="/contact-us">
-                  <button className="bg-white text-[#006132] px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                  <button className="bg-white text-[#021A2B] px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
                     Get Pre-Approved
                   </button>
                 </Link>
@@ -197,7 +197,7 @@ export default function AboutPage() {
                   priority
                 />
                 <div className="absolute -bottom-2 -right-2 bg-white rounded-full p-3 shadow-lg">
-                  <Icons.BadgeCheck className="w-8 h-8 text-[#006132]" />
+                  <Icons.BadgeCheck className="w-8 h-8 text-[#021A2B]" />
                 </div>
               </div>
             </div>
@@ -233,14 +233,14 @@ export default function AboutPage() {
               <div className="mt-6 flex items-center gap-4">
                 <a
                   href="tel:+12013173235"
-                  className="text-[#006132] font-medium flex items-center gap-2"
+                  className="text-[#021A2B] font-medium flex items-center gap-2"
                 >
                   <Icons.Phone className="w-4 h-4" />
                   (201) 317-3235
                 </a>
                 <a
                   href="mailto:sbrennan@nexamortgage.com"
-                  className="text-[#006132] font-medium flex items-center gap-2"
+                  className="text-[#021A2B] font-medium flex items-center gap-2"
                 >
                   <Icons.Mail className="w-4 h-4" />
                   sbrennan@nexamortgage.com
@@ -275,8 +275,8 @@ export default function AboutPage() {
                   key={index}
                   className="text-center p-6 rounded-xl hover:bg-gray-50 transition"
                 >
-                  <div className="w-14 h-14 bg-[#006132]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Icon className="w-7 h-7 text-[#006132]" />
+                  <div className="w-14 h-14 bg-[#021A2B]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Icon className="w-7 h-7 text-[#021A2B]" />
                   </div>
                   <h3 className="font-semibold text-gray-900 mb-2">
                     {value.title}
@@ -417,7 +417,7 @@ export default function AboutPage() {
               prepayment amounts to see their impact on your mortgage.
             </p>
             <Link href="/calculator">
-              <button className="bg-[#006132] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#f36f55] transition">
+              <button className="bg-[#021A2B] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#f36f55] transition">
                 Try Our Mortgage Calculator
               </button>
             </Link>
@@ -448,7 +448,7 @@ export default function AboutPage() {
         </section>
 
         {/* Let's Get You Into Your Dream Home */}
-        <section className="mb-16 bg-[#006132] text-white rounded-2xl p-8 text-center">
+        <section className="mb-16 bg-[#021A2B] text-white rounded-2xl p-8 text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
             Let{`'`}s get you into your dream home
           </h2>
@@ -460,7 +460,7 @@ export default function AboutPage() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a href="mailto:sbrennan@nexamortgage.com">
-              <button className="bg-white text-[#006132] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+              <button className="bg-white text-[#021A2B] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
                 Get Started Today
               </button>
             </a>
@@ -483,7 +483,7 @@ export default function AboutPage() {
                 key={step.step}
                 className="text-center p-4 rounded-xl hover:bg-gray-50 transition"
               >
-                <div className="w-12 h-12 bg-[#006132] text-white rounded-full flex items-center justify-center mx-auto mb-3 text-xl font-bold">
+                <div className="w-12 h-12 bg-[#021A2B] text-white rounded-full flex items-center justify-center mx-auto mb-3 text-xl font-bold">
                   {step.step}
                 </div>
                 <h4 className="font-semibold text-gray-900 text-sm mb-1">
@@ -499,7 +499,7 @@ export default function AboutPage() {
                 key={step.step}
                 className="text-center p-4 rounded-xl hover:bg-gray-50 transition"
               >
-                <div className="w-12 h-12 bg-[#006132] text-white rounded-full flex items-center justify-center mx-auto mb-3 text-xl font-bold">
+                <div className="w-12 h-12 bg-[#021A2B] text-white rounded-full flex items-center justify-center mx-auto mb-3 text-xl font-bold">
                   {step.step}
                 </div>
                 <h4 className="font-semibold text-gray-900 text-sm mb-1">
@@ -554,7 +554,7 @@ export default function AboutPage() {
         </section>
 
         {/* CTA Footer */}
-        <div className="mt-12 bg-[#006132] rounded-2xl p-8 text-white text-center">
+        <div className="mt-12 bg-[#021A2B] rounded-2xl p-8 text-white text-center">
           <h3 className="text-xl font-bold mb-2">Ready to get started?</h3>
           <p className="text-green-200 mb-6 text-sm">
             Contact Sean today for a no-obligation consultation.
@@ -562,7 +562,7 @@ export default function AboutPage() {
           <div className="flex flex-wrap justify-center gap-4">
             <a
               href="tel:+12013173235"
-              className="inline-flex items-center gap-2 bg-white text-[#006132] font-semibold px-6 py-3 rounded-xl hover:bg-green-50 transition"
+              className="inline-flex items-center gap-2 bg-white text-[#021A2B] font-semibold px-6 py-3 rounded-xl hover:bg-green-50 transition"
             >
               <Icons.Phone className="w-5 h-5" /> (201) 317-3235
             </a>

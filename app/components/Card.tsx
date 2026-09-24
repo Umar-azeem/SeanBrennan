@@ -15,7 +15,7 @@ const cards = [
       "With over 20 years in finance, I provide a level of expertise that financially benefits clients and is deeply respected by industry professionals nationwide.",
     icon: Award,
     gradient: "from-[#006137] via-[#006131] to-[#006134]",
-    backBg: "bg-[#006132]",
+    backBg: "bg-[#021A2B]",
     backTitle: "Why Experience Matters",
     features: [
       "20+ years in mortgage finance",
@@ -32,7 +32,7 @@ const cards = [
       "By choosing to be a boutique broker of loan products, our firm is in the best position to deliver optimal choice, aggressive rates, and personal service to every client.",
     icon: TrendingDown,
     gradient: "from-[#006137] via-[#006131] to-[#006134]",
-    backBg: "bg-[#006132]",
+    backBg: "bg-[#021A2B]",
     backTitle: "Our Advantage",
     features: [
       "Access to 50+ lenders",
@@ -49,7 +49,7 @@ const cards = [
       "Here is what we say to challenges — 'bring it on.' We work tirelessly to close all loans, and we don't walk away when a client is up against tough circumstances.",
     icon: Handshake,
     gradient: "from-[#006139] via-[#006133] to-[#006135]",
-    backBg: "bg-[#006132]",
+    backBg: "bg-[#021A2B]",
 
     backTitle: "Our Commitment",
     features: [
@@ -214,7 +214,7 @@ function Card({
               <Link
                 href="/about"
                 onClick={(e) => e.stopPropagation()}
-                className="bg-[#006132] text-white px-4 py-2 rounded-full flex items-center gap-2 text-sm font-medium hover:scale-105 transition-transform"
+                className="bg-[#021A2B] text-white px-4 py-2 rounded-full flex items-center gap-2 text-sm font-medium hover:scale-105 transition-transform"
               >
                 About me
                 <ChevronRight className="w-4 h-4" />
@@ -337,7 +337,7 @@ export default function CardStack() {
         }
       `}</style>
 
-      <div className="overflow-hidden min-h-screen rounded-2xl bg-gradient-to-br from-[#006132] via-[#0e884d] to-[#006132] flex flex-col items-center justify-center p-4 font-sans">
+      <div className="overflow-hidden min-h-screen rounded-2xl bg-gradient-to-br from-[#021A2B] via-[#0e884d] to-[#021A2B] flex flex-col items-center justify-center p-4 font-sans">
         <div className="w-full max-w-lg">
           {/* Header */}
           <div className="text-center mb-8">

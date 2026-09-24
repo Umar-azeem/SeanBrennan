@@ -66,10 +66,10 @@ This inquiry was sent from the Sean Brennan Mortgage website.`,
 
   if (submitted) {
     return (
-      <div className="min-h-screen bg-[#006132] flex items-center justify-center ">
+      <div className="min-h-screen bg-[#021A2B] flex items-center justify-center ">
         <div className="max-w-2xl mx-auto bg-white shadow-lg p-8 border border-slate-200 rounded-2xl text-center">
           <div className="w-16 h-16 bg-green-100 flex items-center justify-center mx-auto mb-4 rounded-full">
-            <CheckCircle2 className="w-8 h-8 text-[#006132]" />
+            <CheckCircle2 className="w-8 h-8 text-[#021A2B]" />
           </div>
           <h3 className="text-2xl font-bold text-slate-900 mb-2">
             Message Ready!
@@ -81,14 +81,14 @@ This inquiry was sent from the Sean Brennan Mortgage website.`,
             If it didn{`'`}t open, please contact us directly at{" "}
             <a
               href="mailto:sbrennan@nexamortgage.com"
-              className="text-[#006132] underline font-medium"
+              className="text-[#021A2B] underline font-medium"
             >
               sbrennan@nexamortgage.com
             </a>
           </p>
           <Button
             onClick={() => setSubmitted(false)}
-            className="bg-[#006132] hover:bg-[#078b4b] text-white"
+            className="bg-[#021A2B] hover:bg-[#078b4b] text-white"
           >
             Send Another Message
           </Button>
@@ -111,7 +111,7 @@ This inquiry was sent from the Sean Brennan Mortgage website.`,
           }}
         />
 
-        <div className="absolute inset-0 z-1 bg-gradient-to-r from-[#024726] to-[#0dad60]  opacity-65" />
+        <div className="absolute inset-0 z-1 bg-gradient-to-r from-[#021A2B] to-[#021A2B]  opacity-65" />
 
         <div className="relative z-10 max-w-4xl mx-auto  p-13">
           <p className="text-green-300 uppercase tracking-[4px] font-bold text-xs sm:text-sm mb-3">
@@ -142,11 +142,11 @@ This inquiry was sent from the Sean Brennan Mortgage website.`,
             </div>
 
             <div className="space-y-4">
-              <h3 className="font-semibold text-lg text-[#006132]">
+              <h3 className="font-semibold text-lg text-[#021A2B]">
                 Why Start the Conversation?
               </h3>
               <div className="flex gap-4">
-                <CheckCircle2 className="text-[#006132] w-5 h-5 mt-1 shrink-0" />
+                <CheckCircle2 className="text-[#021A2B] w-5 h-5 mt-1 shrink-0" />
                 <div>
                   <h4 className="font-medium text-sm sm:text-base">
                     Fast, Personalized Response
@@ -158,7 +158,7 @@ This inquiry was sent from the Sean Brennan Mortgage website.`,
                 </div>
               </div>
               <div className="flex gap-4">
-                <CheckCircle2 className="text-[#006132] w-5 h-5 mt-1 shrink-0" />
+                <CheckCircle2 className="text-[#021A2B] w-5 h-5 mt-1 shrink-0" />
                 <div>
                   <h4 className="font-medium text-sm sm:text-base">
                     No Obligation, No Pressure
@@ -178,11 +178,11 @@ This inquiry was sent from the Sean Brennan Mortgage website.`,
                 href="tel:+12013173235"
                 className="flex items-start gap-4 group"
               >
-                <div className="w-10 h-10 rounded-full bg-white border border-gray-300 flex items-center justify-center text-[#006132] shrink-0 group-hover:bg-[#006132] group-hover:text-white transition">
+                <div className="w-10 h-10 rounded-full bg-white border border-gray-300 flex items-center justify-center text-[#021A2B] shrink-0 group-hover:bg-[#021A2B] group-hover:text-white transition">
                   <Phone className="w-4 h-4" />
                 </div>
                 <div>
-                  <p className="font-bold text-lg text-gray-900 leading-tight group-hover:text-[#006132] transition">
+                  <p className="font-bold text-lg text-gray-900 leading-tight group-hover:text-[#021A2B] transition">
                     (201) 317-3235
                   </p>
                   <p className="text-gray-500 text-xs mt-1">
@@ -195,11 +195,11 @@ This inquiry was sent from the Sean Brennan Mortgage website.`,
                 href="mailto:sbrennan@nexamortgage.com"
                 className="flex items-start gap-4 group"
               >
-                <div className="w-10 h-10 rounded-full bg-white border border-gray-300 flex items-center justify-center text-[#006132] shrink-0 group-hover:bg-[#006132] group-hover:text-white transition">
+                <div className="w-10 h-10 rounded-full bg-white border border-gray-300 flex items-center justify-center text-[#021A2B] shrink-0 group-hover:bg-[#021A2B] group-hover:text-white transition">
                   <Mail className="w-4 h-4" />
                 </div>
                 <div>
-                  <p className="font-bold text-lg text-gray-900 leading-tight group-hover:text-[#006132] transition break-all">
+                  <p className="font-bold text-lg text-gray-900 leading-tight group-hover:text-[#021A2B] transition break-all">
                     sbrennan@nexamortgage.com
                   </p>
                   <p className="text-gray-500 text-xs mt-1">
@@ -209,7 +209,7 @@ This inquiry was sent from the Sean Brennan Mortgage website.`,
               </a>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-full bg-white border border-gray-300 flex items-center justify-center text-[#006132] shrink-0">
+                <div className="w-10 h-10 rounded-full bg-white border border-gray-300 flex items-center justify-center text-[#021A2B] shrink-0">
                   <Clock className="w-4 h-4" />
                 </div>
                 <div>
@@ -237,7 +237,7 @@ This inquiry was sent from the Sean Brennan Mortgage website.`,
                     href={icon.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-full border border-gray-400 bg-white flex items-center justify-center hover:bg-[#006132] transition group"
+                    className="w-10 h-10 rounded-full border border-gray-400 bg-white flex items-center justify-center hover:bg-[#021A2B] transition group"
                     aria-label={icon.alt}
                   >
                     <Image
@@ -288,7 +288,7 @@ This inquiry was sent from the Sean Brennan Mortgage website.`,
                       name="firstName"
                       type="text"
                       required
-                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#006132] bg-gray-50"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#021A2B] bg-gray-50"
                       placeholder="John"
                     />
                   </div>
@@ -300,7 +300,7 @@ This inquiry was sent from the Sean Brennan Mortgage website.`,
                       name="lastName"
                       type="text"
                       required
-                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#006132] bg-gray-50"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#021A2B] bg-gray-50"
                       placeholder="Doe"
                     />
                   </div>
@@ -315,7 +315,7 @@ This inquiry was sent from the Sean Brennan Mortgage website.`,
                       name="email"
                       type="email"
                       required
-                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#006132] bg-gray-50"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#021A2B] bg-gray-50"
                       placeholder="john@example.com"
                     />
                   </div>
@@ -327,7 +327,7 @@ This inquiry was sent from the Sean Brennan Mortgage website.`,
                       name="phone"
                       type="tel"
                       required
-                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#006132] bg-gray-50"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#021A2B] bg-gray-50"
                       placeholder="(555) 123-4567"
                     />
                   </div>
@@ -340,7 +340,7 @@ This inquiry was sent from the Sean Brennan Mortgage website.`,
                   <select
                     name="state"
                     required
-                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#006132] bg-gray-50 text-slate-900"
+                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#021A2B] bg-gray-50 text-slate-900"
                   >
                     <option value="">Select a state...</option>
                     <option value="AL">Alabama</option>
@@ -403,7 +403,7 @@ This inquiry was sent from the Sean Brennan Mortgage website.`,
                   <select
                     name="primaryGoal"
                     required
-                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#006132] bg-gray-50 text-slate-900"
+                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#021A2B] bg-gray-50 text-slate-900"
                   >
                     <option value="">Select a goal...</option>
                     <option value="Home Purchase">Home Purchase</option>
@@ -436,7 +436,7 @@ This inquiry was sent from the Sean Brennan Mortgage website.`,
                     name="message"
                     required
                     rows={4}
-                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#006132] bg-gray-50 resize-none"
+                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#021A2B] bg-gray-50 resize-none"
                     placeholder="Tell me about your mortgage needs..."
                   ></textarea>
                 </div>
@@ -444,7 +444,7 @@ This inquiry was sent from the Sean Brennan Mortgage website.`,
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-[#006132] hover:bg-[#f85d3e] text-white font-semibold py-6 rounded-xl disabled:opacity-70 transition transform duration-300 hover:-translate-y-0.5 shadow-md"
+                  className="w-full bg-[#021A2B] hover:bg-[#f85d3e] text-white font-semibold py-6 rounded-xl disabled:opacity-70 transition transform duration-300 hover:-translate-y-0.5 shadow-md"
                 >
                   {isSubmitting ? "Opening Email..." : "Send Message"}
                 </Button>

@@ -63,7 +63,7 @@ export default function FAQ() {
   };
 
   return (
-    <section className="bg-[#006132] py-12 sm:py-16 lg:py-20 px-4 sm:px-6 relative overflow-hidden">
+    <section className="bg-[#021A2B] py-12 sm:py-16 lg:py-20 px-4 sm:px-6 relative overflow-hidden">
       {/* 3D Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-20 -left-20 w-64 h-64 bg-white/5 rounded-full blur-3xl" />

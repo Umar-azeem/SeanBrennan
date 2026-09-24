@@ -22,12 +22,12 @@ const CreditBuild = () => {
       <div className="flex flex-col lg:flex-row gap-10 lg:gap-12">
         <div className="relative w-full lg:w-[60%] rounded-3xl ">
           <img
-            src="/img/stage.png"
+            src="/img/stage.jpg"
             alt="speaker"
             className="w-full h-[280px] sm:h-[400px] lg:h-150 object-cover rounded-3xl"
           />
 
-          <div className="absolute hover:border-1 border-[#006132] -bottom-7 z-50 md:bottom-28 left-4 md:left-24 bg-white rounded-2xl shadow-lg p-4 sm:p-6 w-[85%] sm:w-[70%]">
+          <div className="absolute hover:border-1 border-[#021A2B] -bottom-7 z-50 md:bottom-28 left-4 md:left-24 bg-white rounded-2xl shadow-lg p-4 sm:p-6 w-[85%] sm:w-[70%]">
             <div className="text-xs font-bold text-teal-600 bg-green-100 hover:text-white hover:bg-green-300  tracking-widest mb-2 inline-block w-auto rounded-md px-3 py-2">
               CREDIT BUILDING
             </div>
@@ -59,7 +59,7 @@ const CreditBuild = () => {
                 return (
                   <div
                     key={i}
-                    className="bg-white hover:border-1  border-[#006132] rounded-2xl p-4 sm:p-6  w-[85%] sm:w-[100%] shadow-sm hover:shadow-md transition"
+                    className="bg-white hover:border-1  border-[#021A2B] rounded-2xl p-4 sm:p-6  w-[85%] sm:w-[100%] shadow-sm hover:shadow-md transition"
                   >
                     <span
                       className={`text-xs uppercase px-3 py-1 rounded-full inline-block ${tagColors[i]}`}
@@ -80,7 +80,7 @@ const CreditBuild = () => {
             <Link href="/contact-us"></Link>{" "}
             <a href="/contact-us">
               {" "}
-              <button className="bg-[#006132] text-white px-6 py-4 w-full rounded-xl flex items-center justify-center gap-2 font-semibold">
+              <button className="bg-[#021A2B] text-white px-6 py-4 w-full rounded-xl flex items-center justify-center gap-2 font-semibold">
                 <img
                   src="https://cdn.prod.website-files.com/6463653eea7395f6535ff53c/646383f8ff0a8d874058f83e_ic-calendar-white.svg"
                   alt=""

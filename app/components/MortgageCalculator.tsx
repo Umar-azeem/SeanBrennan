@@ -73,7 +73,7 @@ export default function MortgageCalculator() {
         {/* Header Section */}
         <div className="flex flex-col md:flex-row justify-between gap-6 mb-10">
           <div className="w-full md:max-w-lg">
-            <h1 className="text-[#006132] font-bold uppercase text-center md:text-start tracking-wide text-md sm:text-lg">
+            <h1 className="text-[#021A2B] font-bold uppercase text-center md:text-start tracking-wide text-md sm:text-lg">
               Mortgage Calculator
             </h1>
             <h2 className="text-2xl md:text-3xl font-bold text-center md:text-start text-black mt-3">
@@ -169,7 +169,7 @@ export default function MortgageCalculator() {
                       onChange={(e: ChangeEvent<HTMLInputElement>) =>
                         setIsVeteran(e.target.checked)
                       }
-                      className="h-5 w-5 accent-[#006132]"
+                      className="h-5 w-5 accent-[#021A2B]"
                     />
                     <span className="text-black font-medium text-sm">
                       Military Veteran
@@ -186,7 +186,7 @@ export default function MortgageCalculator() {
 
             <button
               onClick={handleCalculate}
-              className="bg-[#006132] text-white rounded-lg p-3 font-semibold mt-5 w-full transition duration-300 hover:-translate-y-1 hover:bg-[#006132]/60"
+              className="bg-[#021A2B] text-white rounded-lg p-3 font-semibold mt-5 w-full transition duration-300 hover:-translate-y-1 hover:bg-[#021A2B]/60"
             >
               Calculate
             </button>

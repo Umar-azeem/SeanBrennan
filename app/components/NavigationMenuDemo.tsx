@@ -215,7 +215,7 @@ function NavigationMenuDemo() {
       id="animated-navbar"
       className={`fixed top-0 left-0 right-0 z-50 px-4 py-3
         transition-all duration-500 ease-in-out
-        ${scrolled ? "bg-[#006132] shadow-md" : "bg-transparent"}`}
+        ${scrolled ? "bg-[#021A2B] shadow-md" : "bg-transparent"}`}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -223,7 +223,7 @@ function NavigationMenuDemo() {
             <Button
               variant="default"
               size="icon"
-              className="lg:hidden bg-white hover:bg-white my-2 rounded-full text-[#006132] h-10 w-10"
+              className="lg:hidden bg-white hover:bg-white my-2 rounded-full text-[#021A2B] h-10 w-10"
             >
               <Menu className="h-10 w-10 text-2xl " />
             </Button>
@@ -233,7 +233,7 @@ function NavigationMenuDemo() {
               <Button
                 variant="default"
                 size="icon"
-                className="lg:hidden bg-white hover:bg-white my-2 rounded-full text-[#006132] h-10 w-10"
+                className="lg:hidden bg-white hover:bg-white my-2 rounded-full text-[#021A2B] h-10 w-10"
               >
                 <SquareArrowOutUpRight className="h-10 w-10 text-2xl " />
               </Button>
@@ -241,7 +241,7 @@ function NavigationMenuDemo() {
             <Button
               variant="default"
               size="icon"
-              className="lg:hidden bg-white hover:bg-white my-2 rounded-full text-[#006132] h-10 w-10"
+              className="lg:hidden bg-white hover:bg-white my-2 rounded-full text-[#021A2B] h-10 w-10"
             >
               <a
                 href="https://wa.me/12013173235"
@@ -263,7 +263,7 @@ function NavigationMenuDemo() {
           </div>
           <SheetContent
             side="left"
-            className="w-[380px] sm:w-[580px] bg-[#006132] text-white border-white/10 p-0 overflow-y-auto"
+            className="w-[380px] sm:w-[580px] bg-[#021A2B] text-white border-white/10 p-0 overflow-y-auto"
           >
             <div className="flex h-52 items-center border-b border-white/10 px-1">
               <Link href="/" onClick={() => setIsOpen(false)}>
@@ -373,7 +373,7 @@ function NavigationMenuDemo() {
                 href="https://wa.me/12013173235"
                 className="flex gap-2 justify-center w-full px-4"
               >
-                <button className="bg-white flex justify-center gap-4 text-[#006132] px-6 w-full py-3 rounded-xl font-semibold transition transform duration-300 hover:-translate-y-1">
+                <button className="bg-white flex justify-center gap-4 text-[#021A2B] px-6 w-full py-3 rounded-xl font-semibold transition transform duration-300 hover:-translate-y-1">
                   (201) 317-3235{" "}
                 </button>
               </Link>
@@ -381,7 +381,7 @@ function NavigationMenuDemo() {
                 href="https://teamvb.shapeportal.com/ref/7"
                 className="w-full px-4"
               >
-                <button className="bg-white text-[#006132] px-6 w-full py-3 rounded-xl font-semibold transition transform duration-300 hover:-translate-y-1">
+                <button className="bg-white text-[#021A2B] px-6 w-full py-3 rounded-xl font-semibold transition transform duration-300 hover:-translate-y-1">
                   Apply Online
                 </button>
               </Link>
@@ -423,16 +423,16 @@ function NavigationMenuDemo() {
                           <a
                             href={program.href}
                             rel="noreferrer"
-                            className="flex items-start gap-3 rounded-lg p-3 text-sm transition-colors hover:bg-[#006132] hover:text-[#006132]-foreground group"
+                            className="flex items-start gap-3 rounded-lg p-3 text-sm transition-colors hover:bg-[#021A2B] hover:text-[#021A2B]-foreground group"
                           >
-                            <div className="mt-0.5 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-md bg-[#006132]/10 text-[#006132] group-hover:bg-[#006132] group-hover:text-[white] transition-colors">
+                            <div className="mt-0.5 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-md bg-[#021A2B]/10 text-[#021A2B] group-hover:bg-[#021A2B] group-hover:text-[white] transition-colors">
                               <program.icon className="h-4 w-4" />
                             </div>
                             <div className="flex flex-col gap-0.5">
-                              <div className="font-semibold leading-none text-[#006132]">
+                              <div className="font-semibold leading-none text-[#021A2B]">
                                 {program.title}
                               </div>
-                              <div className="line-clamp-2 text-xs leading-snug text-[#006132]">
+                              <div className="line-clamp-2 text-xs leading-snug text-[#021A2B]">
                                 {program.description}
                               </div>
                             </div>
@@ -458,19 +458,19 @@ function NavigationMenuDemo() {
                           <a
                             href={member.href}
                             rel="noreferrer"
-                            className="flex items-start gap-3 rounded-lg p-3 text-sm transition-colors hover:bg-[#006132] hover:text-[#006132]-foreground group"
+                            className="flex items-start gap-3 rounded-lg p-3 text-sm transition-colors hover:bg-[#021A2B] hover:text-[#021A2B]-foreground group"
                           >
-                            <div className="mt-0.5 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-md bg-[#006132]/10 text-[#006132] group-hover:bg-[#006132] group-hover:text-[white] transition-colors">
+                            <div className="mt-0.5 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-md bg-[#021A2B]/10 text-[#021A2B] group-hover:bg-[#021A2B] group-hover:text-[white] transition-colors">
                               <member.icon className="h-4 w-4" />
                             </div>
                             <div className="flex flex-col gap-0.5">
-                              <div className="font-semibold leading-none text-[#006132]">
+                              <div className="font-semibold leading-none text-[#021A2B]">
                                 {member.title}
                               </div>
-                              <div className="text-[10px] font-medium text-[#006132]/70 uppercase tracking-wide">
+                              <div className="text-[10px] font-medium text-[#021A2B]/70 uppercase tracking-wide">
                                 {member.role} · NMLS #{member.nmls}
                               </div>
-                              <div className="line-clamp-2 text-xs leading-snug text-[#006132]">
+                              <div className="line-clamp-2 text-xs leading-snug text-[#021A2B]">
                                 {member.description}
                               </div>
                             </div>
@@ -482,7 +482,7 @@ function NavigationMenuDemo() {
                   <div className="border-t border-border p-4">
                     <Link
                       href="/team"
-                      className="text-sm font-medium text-[#006132] hover:underline"
+                      className="text-sm font-medium text-[#021A2B] hover:underline"
                     >
                       View All Team Members →
                     </Link>
@@ -506,7 +506,7 @@ function NavigationMenuDemo() {
             target="_blank"
             className="flex gap-2 justify-center "
           >
-            <button className="bg-white text-[#006132] px-6 py-3 rounded-xl font-semibold transition transform duration-300 hover:-translate-y-1">
+            <button className="bg-white text-[#021A2B] px-6 py-3 rounded-xl font-semibold transition transform duration-300 hover:-translate-y-1">
               Apply Now
             </button>
           </Link>

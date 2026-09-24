@@ -3,7 +3,13 @@
 import { useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion, useInView, useMotionValue, useSpring, useTransform } from "framer-motion";
+import {
+  motion,
+  useInView,
+  useMotionValue,
+  useSpring,
+  useTransform,
+} from "framer-motion";
 import { ArrowRight, Calendar, Clock, Sparkles } from "lucide-react";
 
 // ---------- Blog Data ----------
@@ -124,7 +130,7 @@ function BlogCard({
             className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
             style={{
               background:
-                "linear-gradient(135deg, #006132 0%, #67d8dc 50%, #f36f55 100%)",
+                "linear-gradient(135deg, #021A2B 0%, #67d8dc 50%, #f36f55 100%)",
               padding: "2px",
               WebkitMask:
                 "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
@@ -140,7 +146,7 @@ function BlogCard({
               background: useTransform(
                 [glowX, glowY],
                 ([x, y]) =>
-                  `radial-gradient(400px circle at ${x} ${y}, rgba(0,97,50,0.08), transparent 40%)`
+                  `radial-gradient(400px circle at ${x} ${y}, rgba(0,97,50,0.08), transparent 40%)`,
               ),
             }}
           />
@@ -166,7 +172,7 @@ function BlogCard({
 
             {/* Category badge with shimmer */}
             <div className="absolute top-4 left-4 z-10">
-              <span className="relative inline-flex items-center gap-1.5 bg-white/95 backdrop-blur-md text-[#006132] text-[11px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full shadow-lg overflow-hidden">
+              <span className="relative inline-flex items-center gap-1.5 bg-white/95 backdrop-blur-md text-[#021A2B] text-[11px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full shadow-lg overflow-hidden">
                 <Sparkles className="w-3 h-3" />
                 {post.category}
                 {/* Shimmer effect */}
@@ -203,12 +209,12 @@ function BlogCard({
           >
             {/* Date */}
             <div className="flex items-center gap-2 text-xs text-gray-500 mb-3">
-              <Calendar className="w-3.5 h-3.5 text-[#006132]" />
+              <Calendar className="w-3.5 h-3.5 text-[#021A2B]" />
               <span className="font-medium">{post.date}</span>
             </div>
 
             {/* Title */}
-            <h3 className="text-lg md:text-xl font-bold text-gray-900 leading-snug mb-3 group-hover:text-[#006132] transition-colors duration-300">
+            <h3 className="text-lg md:text-xl font-bold text-gray-900 leading-snug mb-3 group-hover:text-[#021A2B] transition-colors duration-300">
               {post.title}
             </h3>
 
@@ -218,11 +224,11 @@ function BlogCard({
             </p>
 
             {/* Read more with animated underline */}
-            <div className="inline-flex items-center gap-2 text-[#006132] font-semibold text-sm mt-auto group/link">
+            <div className="inline-flex items-center gap-2 text-[#021A2B] font-semibold text-sm mt-auto group/link">
               <span className="relative">
                 READ MORE
                 {/* Animated underline */}
-                <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-[#006132] group-hover/link:w-full transition-all duration-300" />
+                <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-[#021A2B] group-hover/link:w-full transition-all duration-300" />
               </span>
               <motion.span
                 className="inline-flex"
@@ -239,7 +245,7 @@ function BlogCard({
           </div>
 
           {/* Bottom accent line */}
-          <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#006132] via-[#67d8dc] to-[#006132] scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500" />
+          <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#021A2B] via-[#67d8dc] to-[#021A2B] scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500" />
         </div>
       </Link>
     </motion.div>
@@ -258,7 +264,7 @@ export default function LatestBlogPosts() {
     >
       {/* Animated background decorations */}
       <motion.div
-        className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-[#006132]/5 blur-3xl pointer-events-none"
+        className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-[#021A2B]/5 blur-3xl pointer-events-none"
         animate={{
           scale: [1, 1.2, 1],
           opacity: [0.3, 0.6, 0.3],
@@ -287,7 +293,7 @@ export default function LatestBlogPosts() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="inline-flex items-center gap-2 bg-[#006132]/10 text-[#006132] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-4"
+            className="inline-flex items-center gap-2 bg-[#021A2B]/10 text-[#021A2B] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-4"
           >
             <Sparkles className="w-3.5 h-3.5" />
             Insights & Updates
@@ -296,14 +302,14 @@ export default function LatestBlogPosts() {
           {/* Title with gradient + shimmer */}
           <h2 className="relative text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-gray-900 mb-4 inline-block">
             Latest{" "}
-            <span className="relative bg-gradient-to-r from-[#006132] via-[#67d8dc] to-[#006132] bg-clip-text text-transparent bg-[length:200%_auto] animate-[shimmer_3s_linear_infinite]">
+            <span className="relative bg-gradient-to-r from-[#021A2B] via-[#67d8dc] to-[#021A2B] bg-clip-text text-transparent bg-[length:200%_auto] animate-[shimmer_3s_linear_infinite]">
               Blog Posts
             </span>
           </h2>
 
           <p className="text-gray-600 max-w-2xl mx-auto text-base md:text-lg">
-            Expert mortgage insights, market updates, and home buying tips
-            from your trusted loan officer.
+            Expert mortgage insights, market updates, and home buying tips from
+            your trusted loan officer.
           </p>
 
           {/* Decorative line */}
@@ -311,7 +317,7 @@ export default function LatestBlogPosts() {
             initial={{ width: 0 }}
             animate={isInView ? { width: "80px" } : {}}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="h-1 bg-gradient-to-r from-transparent via-[#006132] to-transparent mx-auto mt-6 rounded-full"
+            className="h-1 bg-gradient-to-r from-transparent via-[#021A2B] to-transparent mx-auto mt-6 rounded-full"
           />
         </motion.div>
 
@@ -336,7 +342,7 @@ export default function LatestBlogPosts() {
         >
           <Link
             href="/contact-us"
-            className="group inline-flex items-center gap-3 bg-[#006132] hover:bg-[#004d26] text-white font-semibold px-8 py-4 rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(0,97,50,0.3)]"
+            className="group inline-flex items-center gap-3 bg-[#021A2B] hover:bg-[#004d26] text-white font-semibold px-8 py-4 rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(0,97,50,0.3)]"
           >
             contact us for more insights
             <motion.span

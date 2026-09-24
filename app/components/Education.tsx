@@ -130,7 +130,7 @@ const LoanProductsCarousel: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex flex-col lg:flex-row justify-between gap-10 items-start">
           <div className="w-full lg:w-[600px]">
-            <p className="text-[#006132] text-center lg:text-left font-bold tracking-[4px] mb-6 text-sm">
+            <p className="text-[#021A2B] text-center lg:text-left font-bold tracking-[4px] mb-6 text-sm">
               LOAN PROGRAMS
             </p>
             <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 text-center lg:text-left leading-tight">
@@ -142,7 +142,7 @@ const LoanProductsCarousel: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 mt-8 justify-center lg:justify-start">
               <Link href="/contact-us">
-                <button className="bg-[#006132] hover:bg-[#004d26] text-white px-6 py-3 rounded-xl font-semibold flex items-center justify-center gap-2 transition w-full sm:w-auto">
+                <button className="bg-[#021A2B] hover:bg-[#004d26] text-white px-6 py-3 rounded-xl font-semibold flex items-center justify-center gap-2 transition w-full sm:w-auto">
                   Get Started <ArrowRight size={18} />
                 </button>
               </Link>
@@ -164,7 +164,7 @@ const LoanProductsCarousel: React.FC = () => {
                 {loanProducts.map((product) => (
                   <div
                     key={product.id}
-                    className="min-w-[260px] h-[260px] md:min-w-[250px] md:h-[300px] border-t-10 border-black bg-[#006132] text-white rounded-b-3xl p-5 md:p-6 flex flex-col justify-between flex-shrink-0"
+                    className="min-w-[260px] h-[260px] md:min-w-[250px] md:h-[300px] border-t-10 border-black bg-[#021A2B] text-white rounded-b-3xl p-5 md:p-6 flex flex-col justify-between flex-shrink-0"
                   >
                     <div className="flex items-center">
                       <img
@@ -209,7 +209,7 @@ const LoanProductsCarousel: React.FC = () => {
                     key={idx}
                     onClick={() => setCurrentIndex(idx)}
                     className={`w-2.5 h-2.5 rounded-full transition ${
-                      idx === currentIndex ? "bg-[#006132] w-8" : "bg-gray-300"
+                      idx === currentIndex ? "bg-[#021A2B] w-8" : "bg-gray-300"
                     }`}
                   />
                 ))}

@@ -28,7 +28,7 @@ function buildPhotoUrl(name: string): string {
 }
 
 const avatarColors = [
-  "#006132",
+  "#021A2B",
   "#004a25",
   "#1a7a4a",
   "#2d8a5e",
@@ -912,7 +912,7 @@ export default function Branches() {
   return (
     <div className="bg-[#f5f5f5] min-h-screen">
       {/* Hero */}
-      <div className="bg-gradient-to-b rounded-2xl from-[#006132] to-[#004a25] text-white py-16 sm:py-20 px-4 text-center">
+      <div className="bg-gradient-to-b rounded-2xl from-[#021A2B] to-[#004a25] text-white py-16 sm:py-20 px-4 text-center">
         <div className="max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-1.5 text-sm text-green-200 mb-6">
             <Building2 className="w-4 h-4" /> Nationwide Network
@@ -934,7 +934,7 @@ export default function Branches() {
         <div className="bg-green-50 rounded-2xl p-6 border border-green-200 mb-8">
           <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16">
             <div className="flex items-center gap-3">
-              <div className="bg-[#006132] p-2 rounded-full">
+              <div className="bg-[#021A2B] p-2 rounded-full">
                 <Users className="w-6 h-6 text-white" />
               </div>
               <div>
@@ -945,7 +945,7 @@ export default function Branches() {
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <div className="bg-[#006132] p-2 rounded-full">
+              <div className="bg-[#021A2B] p-2 rounded-full">
                 <Building2 className="w-6 h-6 text-white" />
               </div>
               <div>
@@ -954,7 +954,7 @@ export default function Branches() {
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <div className="bg-[#006132] p-2 rounded-full">
+              <div className="bg-[#021A2B] p-2 rounded-full">
                 <Phone className="w-6 h-6 text-white" />
               </div>
               <div>
@@ -977,7 +977,7 @@ export default function Branches() {
                 setSearchTerm(e.target.value);
                 setVisibleCount(15);
               }}
-              className="w-full pl-10 pr-10 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#006132] bg-white text-sm"
+              className="w-full pl-10 pr-10 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#021A2B] bg-white text-sm"
             />
             {searchTerm && (
               <button
@@ -994,7 +994,7 @@ export default function Branches() {
               <button
                 key={role}
                 onClick={() => toggleFilter(role)}
-                className={`px-3 py-1 text-xs rounded-full border transition ${activeFilters.includes(role) ? "bg-[#006132] text-white border-[#006132]" : "bg-white text-gray-600 border-gray-300 hover:border-[#006132]"}`}
+                className={`px-3 py-1 text-xs rounded-full border transition ${activeFilters.includes(role) ? "bg-[#021A2B] text-white border-[#021A2B]" : "bg-white text-gray-600 border-gray-300 hover:border-[#021A2B]"}`}
               >
                 {role}
               </button>
@@ -1076,7 +1076,7 @@ export default function Branches() {
             <p className="text-gray-500">No branches found.</p>
             <button
               onClick={clearAll}
-              className="mt-3 text-[#006132] font-medium hover:underline text-sm"
+              className="mt-3 text-[#021A2B] font-medium hover:underline text-sm"
             >
               Clear filters
             </button>
@@ -1087,7 +1087,7 @@ export default function Branches() {
           <div className="text-center mt-6">
             <button
               onClick={() => setVisibleCount((v) => v + 15)}
-              className="bg-[#006132] hover:bg-[#003B1A] text-white px-8 py-3 rounded-xl font-semibold transition shadow-md"
+              className="bg-[#021A2B] hover:bg-[#003B1A] text-white px-8 py-3 rounded-xl font-semibold transition shadow-md"
             >
               Load More
             </button>
@@ -1095,7 +1095,7 @@ export default function Branches() {
         )}
 
         {/* CTA */}
-        <div className="mt-12 bg-[#006132] rounded-2xl p-8 text-white text-center">
+        <div className="mt-12 bg-[#021A2B] rounded-2xl p-8 text-white text-center">
           <h3 className="text-xl font-bold mb-2">
             Not sure which branch to contact?
           </h3>
@@ -1105,7 +1105,7 @@ export default function Branches() {
           </p>
           <a
             href="tel:7068293294"
-            className="inline-flex items-center gap-2 bg-white text-[#006132] font-semibold px-6 py-3 rounded-xl hover:bg-green-50 transition"
+            className="inline-flex items-center gap-2 bg-white text-[#021A2B] font-semibold px-6 py-3 rounded-xl hover:bg-green-50 transition"
           >
             <Phone className="w-5 h-5" /> (904) 735-1895
           </a>

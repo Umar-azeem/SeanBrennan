@@ -87,15 +87,15 @@ function LoanProgramsContent() {
             <div
               key={program.id}
               onClick={() => handleProgramClick(program)}
-              className={`bg-white p-6 rounded-xl shadow-sm border transition-all cursor-pointer group hover:shadow-md hover:border-[#1470AF] ${
+              className={`bg-white p-6 rounded-xl shadow-sm border transition-all cursor-pointer group hover:shadow-md hover:border-[#021A2B] ${
                 selectedProgram?.id === program.id 
-                  ? 'border-[#1470AF] shadow-md ring-2 ring-[#1470AF]/20' 
+                  ? 'border-[#021A2B] shadow-md ring-2 ring-[#021A2B]/20' 
                   : 'border-gray-200'
               }`}
             >
               <div className="flex items-center gap-3 mb-3">
-                <Icon className="w-8 h-8 text-[#1470AF]" />
-                <h2 className="text-lg font-semibold text-gray-900 group-hover:text-[#1470AF] transition">
+                <Icon className="w-8 h-8 text-[#021A2B]" />
+                <h2 className="text-lg font-semibold text-gray-900 group-hover:text-[#021A2B] transition">
                   {program.title}
                 </h2>
               </div>
@@ -117,10 +117,10 @@ function LoanProgramsContent() {
           </button>
 
           <div className="flex items-start gap-4 mb-6">
-            <div className="p-3 bg-[#1470AF]/10 rounded-full">
+            <div className="p-3 bg-[#021A2B]/10 rounded-full">
               {(() => {
                 const Icon = getIconComponent(selectedProgram.icon);
-                return <Icon className="w-8 h-8 text-[#1470AF]" />;
+                return <Icon className="w-8 h-8 text-[#021A2B]" />;
               })()}
             </div>
             <div>
@@ -153,7 +153,7 @@ function LoanProgramsContent() {
                           key={idx}
                           className="flex items-start gap-2 text-gray-700"
                         >
-                          <Icons.CheckCircle className="w-5 h-5 text-[#1470AF] flex-shrink-0 mt-0.5" />
+                          <Icons.CheckCircle className="w-5 h-5 text-[#021A2B] flex-shrink-0 mt-0.5" />
                           <span>{benefit}</span>
                         </li>
                       ),
@@ -187,8 +187,8 @@ function LoanProgramsContent() {
             {/* Ideal For */}
             {selectedProgram.idealFor &&
               selectedProgram.idealFor.length > 0 && (
-                <div className="mt-6 p-4 bg-[#F0F7F3] rounded-lg border border-[#1470AF]/20">
-                  <h3 className="text-md font-semibold text-[#1470AF] mb-3">
+                <div className="mt-6 p-4 bg-[#F0F7F3] rounded-lg border border-[#021A2B]/20">
+                  <h3 className="text-md font-semibold text-[#021A2B] mb-3">
                     Who This Loan Is For
                   </h3>
                   <ul className="flex flex-wrap gap-2 list-none p-0">
@@ -215,7 +215,7 @@ function LoanProgramsContent() {
                 <div className="space-y-4">
                   {selectedProgram.steps.map((step) => (
                     <div key={step.step} className="flex gap-4 items-start">
-                      <div className="flex-shrink-0 w-8 h-8 bg-[#1470AF] text-white rounded-full flex items-center justify-center font-bold text-sm">
+                      <div className="flex-shrink-0 w-8 h-8 bg-[#021A2B] text-white rounded-full flex items-center justify-center font-bold text-sm">
                         {step.step}
                       </div>
                       <div>
@@ -290,7 +290,7 @@ function LoanProgramsContent() {
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
                 href={selectedProgram.ctaLink || "/contact-us"}
-                className="inline-flex items-center px-6 py-3 bg-[#1470AF] hover:bg-[#004d26] text-white font-semibold rounded-lg transition"
+                className="inline-flex items-center px-6 py-3 bg-[#021A2B] hover:bg-[#004d26] text-white font-semibold rounded-lg transition"
               >
                 {selectedProgram.ctaText || "Get Started"}
                 <Icons.ArrowRight className="ml-2 w-4 h-4" />

@@ -8,8 +8,8 @@ interface Video {
   title: string;
   description: string;
   duration: string;
-  videoSrc: string;      // local mp4 path
-  thumbnail: string;     // path to thumbnail image (optional)
+  videoSrc: string; // local mp4 path
+  thumbnail: string; // path to thumbnail image (optional)
 }
 
 // ---------- Video Data (9 items) ----------
@@ -204,7 +204,7 @@ const ReelCard = ({
         <div className="flex items-center gap-1.5 mt-1.5">
           <span
             className="w-1.5 h-1.5 rounded-full"
-            style={{ background: "#006132" }}
+            style={{ background: "#021A2B" }}
           />
           <span className="text-[10px] text-white/50 font-medium tracking-wide uppercase">
             Reel
@@ -270,7 +270,7 @@ const VideoModal = ({
           <h3 className="text-white font-bold text-lg">{video.title}</h3>
           <p className="text-white/70 text-sm mt-0.5">{video.description}</p>
           <div className="flex items-center gap-3 mt-2">
-            <span className="text-[#006132] text-xs font-semibold uppercase tracking-wider">
+            <span className="text-[#021A2B] text-xs font-semibold uppercase tracking-wider">
               {video.duration}
             </span>
             <span className="w-1 h-1 rounded-full bg-white/30" />
@@ -348,10 +348,10 @@ export default function VideoCarousel() {
           <div className="flex items-center gap-3 mb-1">
             <span
               className="w-1 h-8 rounded-full"
-              style={{ background: "#006132" }}
+              style={{ background: "#021A2B" }}
             />
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-slate-800 tracking-tight">
-              Client <span style={{ color: "#006132" }}>Reels</span>
+              Client <span style={{ color: "#021A2B" }}>Reels</span>
             </h2>
           </div>
           <p className="text-sm text-slate-500 ml-4 pl-0.5">
@@ -363,11 +363,11 @@ export default function VideoCarousel() {
           <span className="relative flex h-2 w-2">
             <span
               className="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75"
-              style={{ background: "#006132" }}
+              style={{ background: "#021A2B" }}
             />
             <span
               className="relative inline-flex rounded-full h-2 w-2"
-              style={{ background: "#006132" }}
+              style={{ background: "#021A2B" }}
             />
           </span>
           <span className="text-xs font-medium text-slate-600">
@@ -411,7 +411,7 @@ export default function VideoCarousel() {
           disabled={!showRightArrow}
           className={`absolute right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-200 shadow-lg -mr-4 ${
             showRightArrow
-              ? "bg-white text-[#006132] hover:bg-slate-50 hover:scale-105 border border-slate-200"
+              ? "bg-white text-[#021A2B] hover:bg-slate-50 hover:scale-105 border border-slate-200"
               : "bg-slate-100 text-slate-300 cursor-not-allowed opacity-50"
           }`}
           aria-label="Scroll right"
@@ -427,14 +427,14 @@ export default function VideoCarousel() {
       <div className="mt-6 px-2">
         <div
           ref={trackRef}
-          className="relative w-full h-2 bg-[#006132]/20 rounded-full cursor-pointer overflow-visible"
+          className="relative w-full h-2 bg-[#021A2B]/20 rounded-full cursor-pointer overflow-visible"
           onClick={handleTrackClick}
         >
           <div
             className="absolute left-0 top-0 h-full rounded-full transition-all duration-150"
             style={{
               width: `${scrollProgress * 100}%`,
-              background: "#006132",
+              background: "#021A2B",
             }}
           />
 
@@ -446,7 +446,7 @@ export default function VideoCarousel() {
                 className="absolute top-1/2 -translate-y-1/2 w-1 h-4 rounded-full transition-colors duration-200"
                 style={{
                   left: `${position * 100}%`,
-                  background: "#006132",
+                  background: "#021A2B",
                   transform: "translateX(-50%) translateY(-50%)",
                 }}
               />
