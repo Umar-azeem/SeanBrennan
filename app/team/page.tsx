@@ -1,12 +1,10 @@
 // app/team/page.tsx
 "use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import * as Icons from "lucide-react";
 import { motion } from "framer-motion";
 import { teamMembers } from "@/app/data/team";
-import AboutPage from "../components/about";
 
 export default function TeamPage() {
   return (
