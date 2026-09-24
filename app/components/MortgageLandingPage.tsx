@@ -93,7 +93,7 @@ const MortgageLandingPage = () => {
                   Satisfied Customers
                 </p>
               </div>
-              <h2 className="text-2xl sm:text-3xl font-bold">100K+</h2>
+              {/* <h2 className="text-2xl sm:text-3xl font-bold">100K+</h2> */}
             </div>
 
             <div className="  relative w-full max-w-[450px]">
